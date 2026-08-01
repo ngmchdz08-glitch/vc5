@@ -46,6 +46,7 @@ jobs:
 
     - name: Build .deb
       run: |
+        brew install ldid
         export PATH=$THEOS/bin:$PATH
         # Auto-detect project root
         if [ -d "VCam" ]; then
