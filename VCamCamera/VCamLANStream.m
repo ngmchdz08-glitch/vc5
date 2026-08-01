@@ -233,6 +233,7 @@ static void decompressionCallback(void *decompressionOutputRefCon,
     // We need a format description — extract from session
     // Since we can't easily get it back, store it during creation
     // For now, decode directly via VT
+    CMSampleBufferRef sampleBuffer = NULL;
     
     VTDecodeFrameFlags decodeFlags = kVTDecodeFrame_EnableAsynchronousDecompression;
     VTDecodeInfoFlags infoFlags = 0;
